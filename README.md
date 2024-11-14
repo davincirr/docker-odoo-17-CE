@@ -1,16 +1,16 @@
-# Installing Odoo 17.0 with one command (Supports multiple Odoo instances on one server).
+# Installing Odoo 17.0 with one command (Supports multiple Odoo instances on one server). https://github.com/davincirr/docker-odoo-17-CE.git
 
 ## Quick Installation
 
 Install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) yourself, then run the following to set up first Odoo instance @ `localhost:10017` (default master password: `minhng.info`):
 
 ``` bash
-curl -s https://raw.githubusercontent.com/davincirr/odoo-17-docker-compose/master/run.sh | sudo bash -s odoo-one 10017 20017
+curl -s https://raw.githubusercontent.com/davincirr/docker-odoo-17-CE/master/run.sh | sudo bash -s odoo-one 10017 20017
 ```
-and/or run the following to set up another Odoo instance @ `localhost:11017` (default master password: `minhng.info`):
+and/or run the following to set up another Odoo instance @ `localhost:11017` (default master password: control@odoo1+.):
 
 ``` bash
-curl -s https://raw.githubusercontent.com/davincirr/odoo-17-docker-compose/master/run.sh | sudo bash -s odoo-two 11017 21017
+curl -s https://raw.githubusercontent.com/davincirr/docker-odoo-17-CE/master/run.sh | sudo bash -s odoo-two 11017 21017
 ```
 
 Some arguments:
